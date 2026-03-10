@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "dockerhubusername/python-app"
+        IMAGE_NAME = "vigneshkavi/python-app"
     }
 
     stages {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/username/python-app.git'
+                git 'https://github.com/vigneshkavivk/images.git'
             }
         }
 
