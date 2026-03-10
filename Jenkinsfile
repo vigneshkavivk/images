@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/vigneshkavivk/images.git'
+                git branch: 'main', url: 'https://github.com/vigneshkavivk/images.git'
             }
         }
 
@@ -41,6 +41,5 @@ pipeline {
                 sh 'kubectl apply -f k8s/service.yaml'
             }
         }
-
     }
 }
