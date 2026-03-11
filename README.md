@@ -181,22 +181,6 @@ Grafana (Docker :3000)
 
 ---
 
-# ⚠️ One small improvement (important)
-
-Right now your Python app returns:
-
-```
-Hello from Jenkins Kubernetes CI/CD!
-```
-
-Prometheus works best if app exposes **/metrics** endpoint.
-
-Example:
-
-```
-http://192.168.49.2:30007/metrics
-```
-
 Then Prometheus can collect:
 
 ```
@@ -205,13 +189,3 @@ cpu_usage
 memory_usage
 ```
 
----
-
-✅ If you want, I can also show a **very clean DevOps demo setup**:
-
-* Python app with `/metrics`
-* Prometheus auto scraping
-* Grafana dashboard
-* Kubernetes + Docker monitoring architecture
-
-This looks **very impressive in interviews or presentations**.
