@@ -1,10 +1,3 @@
-Nice 👍 Your app is already accessible:
-
-```
-http://192.168.49.2:30007
-```
-
-Output:
 
 ```
 Hello from Jenkins Kubernetes CI/CD!
@@ -42,6 +35,7 @@ global:
 
 scrape_configs:
   - job_name: "python-k8s-app"
+    metrics_path: /
     static_configs:
       - targets: ["192.168.49.2:30007"]
 ```
